@@ -32,7 +32,7 @@ format.map((side, index)=>{
         message = `*${data[index].join(' ').padEnd(18, " ")}*`;
         rezult.push(message);
       } else {
-          const message = `${data[index].join(' ').padStart(18, " ")}*`;   
+          const message = `*${data[index].join(' ').padStart(18, " ")}*`;   
           rezult.push(message);
         }
     

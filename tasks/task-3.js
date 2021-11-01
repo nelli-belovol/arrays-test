@@ -20,12 +20,12 @@ format.map((side, index)=>{
        let firstPart = data[index].splice(0, 3).join(" ");  
        let secondPart = data[index].join(" "); 
   
-       if(side === "LEFT"){
-         rezult.push(`${firstPart.padEnd(18, " ")}*`);
-         rezult.push(`${secondPart.padEnd(18, " ")}*`)
+        if(side === "LEFT"){
+         rezult.push(`*${firstPart.padEnd(18, " ")}*`);
+         rezult.push(`*${secondPart.padEnd(18, " ")}*`)
        }else{
-         rezult.push(`${firstPart.padStart(18, " ")}*`);
-         rezult.push(`${secondPart.padStart(18, " ")}*`)
+         rezult.push(`*${firstPart.padStart(18, " ")}*`);
+         rezult.push(`*${secondPart.padStart(18, " ")}*`)
        }
   } else {
     if(side === "LEFT"){  
